@@ -165,4 +165,4 @@ We plan to adapt the following modeling method in the project:
 
 2) Using the time series we will create, we can follow up by doing a time series forecasting on the current interest rate variable in the monthly performance dataset. Firstly, we can see if it is possible to fit any forecasting model such as ARIMA, ETS, etc. Secondly, we can test the accuracy of the forecasted values against the actual values in the dataset.
 
-# Referenecs
+# References
