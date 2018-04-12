@@ -31,7 +31,7 @@ The mission of this company is to increase the supply of money for mortgage and 
 To analyse the credit performance of mortgage transactions of Freddie Mac, and potentially evaluate the feasibility of implementing Freddie Mac in Hong Kong with the help of the HKSAR government.
 
 ### Project Objectives:
-1) To consolidate concepts and tools that we learnt in previous/current courses by applying them in a real life dataset and situation, such as data visualisation, data mining and big data analytics.
+1) To consolidate concepts and tools that we learnt in previous/current courses by applying them in a real life dataset and situation, such as data visualisation, data mining and big data analytics etc.
 2) To comprehensively execute a “Data science workflow”, i.e. data preprocessing, exploratory data analysis, data modelling, model interpretation and evaluation, and data visualisation.
 3) To potentially provide a strategy for the HKSAR government to alleviate the housing problem in HK.
 
