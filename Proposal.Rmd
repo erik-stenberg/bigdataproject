@@ -1,60 +1,62 @@
 ---
-title: "Project Proposal"
-
+title: |
+    | Big Data Analytics in the Mortgage Industry
+    | Project Proposal
 author:
-- "Erik Stenberg  3035428720"
-- "Huang Zanming  3035182081"
-- "Wong Kwan Yi   3035503192"
-- "Wong Yick Lun  3035281407"
-
-bibliography: bibliography.bib
-
+- Erik Stenberg  3035428720
+- Huang Zanming  3035182081
+- Wong Kwan Yi   3035503192
+- Wong Yick Lun  3035281407
 output:
-  pdf_document: default
-  html_notebook: default
+  pdf_document:
+    toc: true
+    toc_depth: 3
+bibliography: bibliography.bib
 ---
 
 ```{r, echo=FALSE}
 options(citr.use_betterbiblatex = FALSE)
 ```
+
+\newpage 
 #Objectives
 
-### Background of project:
+## Background of project
 
 Housing has been one of the biggest problems which the Hong Kong society faces. While no effective solutions seem to be available to solve it, our group aims to find out a potential strategy that HKSAR government could learn from, by looking at the government-sponsored U.S. corporate Freddie Mac, which provides open data for the public.
 
 The mission of this company is to increase the supply of money for mortgage and hence ease up homeownership and rental housing for the U.S. citizens, which would also benefit our citizens when implemented properly in Hong Kong.
 
-### Problem of the study:
+## Problem of the study
 
 To analyse the credit performance of mortgage transactions of Freddie Mac, and potentially evaluate the feasibility of implementing Freddie Mac in Hong Kong with the help of the HKSAR government.
 
-### Project Objectives:
+## Project Objectives
 1) To consolidate concepts and tools that we learnt in previous/current courses by applying them in a real life dataset and situation, such as data visualisation, data mining and big data analytics etc using R, [@R] and the package **sparklyr** [@sparklyr].
 2) To comprehensively execute a "Data science workflow", i.e. data preprocessing, exploratory data analysis, data modelling, model interpretation, evaluation, and data visualisation.
 3) To potentially provide a strategy for the HKSAR government to alleviate the housing problem in HK.
 
 # Description of data
 
-### Source of Data
+## Source of Data
 
 The dataset utilised in this project is provided by The Federal Home Loan Mortgage Corporation (FHLMC), also known as Freddie Mac. Freddie Mac is a government-sponsored private corporation which aims at providing liquidity, stability and affordability to the U.S. housing market by purchasing residential mortgage loans from the lenders on the secondary mortgage market and consequently sell them to other investors on the market, according to their website, [see @FreddieMac]. By doing this, Freddie Mac maintains a stable money flow to the mortgage loan lenders on the market in pursuits of easier homeownership and rental housing for the U.S. citizens.
 
 The liability of the dataset can be guaranteed as Freddie Mac is regulated by the Federal Housing Finance Agency (FHFA), an independent federal agency with expanded legal and regulatory authority and power of several departments of the U.S. Federal Government, such as the Federal Housing Finance Board (FHFB), the Office of Federal Housing Enterprise Oversight (OFHEO) etc. Regardless of the trustworthiness of the dataset, incompleteness and errors are expected.
 
-### Method of data collection
+## Method of data collection
 
 In hopes of increasing transparency, Freddie Mac has disclosed monthly loan-level credit performance data on a portion of fully amortising fixed-rate mortgages that the company purchased or guaranteed from 1999 to 2017, which could be viewed and downloaded freely on their official website.
 
-###  Background information of the data
+##  Background information of the data
 
 The Single Family Loan-Level Dataset (the dataset) originally covers approximately 26 million fixed-rate mortgages. Albeit the huge data size, our group will focus on the data between 2007 to 2016 due to limited hardware power of the machines such as memory and storage.
 
 The dataset has two parts: loan origination data and monthly performance data. In the case where the loan is in the origination part but not the performance part, the loan was paid off before the first cycle begins or in the month of origination. The variables in the dataset will be discussed in later sessions.
 
 
-# Description of variables: 
-### Origination Dataset<br/>
+# Description of variables 
+## Origination Dataset<br/>
 In the origination data file, there are a total of 26 variables. The table below describes the variables in the dataset. 
 
 ||Variable Name|Description|Type|
@@ -87,7 +89,7 @@ In the origination data file, there are a total of 26 variables. The table below
 |26    |Super conforming flag|For mortgages that exceed conforming loan limits with origination dates on or after 10/1/2008 and settlements on or after 1/1/2009 |Categorical|
 *Source*: @FreddieMac2018
 
-### Monthly Performance Dataset<br/>
+## Monthly Performance Dataset<br/>
 In the monthly performance dataset, there are a total of 24 variables. The table below describes the variables in the dataset.
 
 ||Variable Name|Description|Type|
@@ -118,7 +120,7 @@ In the monthly performance dataset, there are a total of 24 variables. The table
 
 *Source*: @FreddieMac2018
 
-### Quality of the data and data preparation:
+## Quality of the data and data preparation
 1) Many empty or N/A values in the monthly performance data set.<br/>
 The Dataset is sparse in nature. 15 out of 23 total columns are mostly empty or not avalible. Some columns such as Repurchase Flag, Modification Flag, Zero Balance Code, and Zero Balance Effective Data are left empty on purpose, as these data are only avalible in the loan termination months. Also columns like Legal Costs, Tax and Insurance, Miscellaneous Expenses are left empty as the data are only applicable when loan ends with foreclosure or REO Disposition. However other columns such as Actual Loss Calculation are left empty without expanation. Due to the lack of data, there will be certain limitations in future analysis. 
 
