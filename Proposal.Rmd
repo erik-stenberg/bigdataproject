@@ -21,10 +21,18 @@ options(citr.use_betterbiblatex = FALSE)
 
 ### Background of project:
 
+Housing has been one of the biggest problems which the Hong Kong society faces. While no effective solutions seem to be available to solve it, our group aims to find out a potential strategy that HKSAR government could learn from, by looking at the government-sponsored U.S. corporate Freddie Mac, which provides open data for the public.
+
+The mission of this company is to increase the supply of money for mortgage and hence ease up homeownership and rental housing for the U.S. citizens, which would also benefit our citizens when implemented properly in Hong Kong.
+
 ### Problem of the study:
 
+To analyse the credit performance of mortgage transactions of Freddie Mac, and potentially evaluate the feasibility of implementing Freddie Mac in Hong Kong with the help of the HKSAR government.
+
 ### Project Objectives:
-1) To
+1) To consolidate concepts and tools that we learnt in previous/current courses by applying them in a real life dataset and situation, such as data visualisation, data mining and big data analytics etc.
+2) To comprehensively execute a “Data science workflow”, i.e. data preprocessing, exploratory data analysis, data modelling, model interpretation and evaluation, and data visualisation.
+3) To potentially provide a strategy for the HKSAR government to alleviate the housing problem in HK.
 
 # Description of data
 
@@ -137,6 +145,7 @@ The Dataset is sparse in nature. 15 out of 23 total columns are mostly empty or 
 The data quality is what you would expect from a government-sponsored enterprise. Exstensive data wrangling and manipulation is inevitable since people have different intentions of usage and use different softwares. 
 
 # Study Plan
+Since, the data set have hugh number of observations and variables. We will handle it in sparklyr.
 
 ## Data Visualisation
 We plan to do the following Data visualization on the dataset:
@@ -150,7 +159,7 @@ We plan to do the following Data visualization on the dataset:
 ## Modelling
 We plan to adapt the following modeling method in the project:
 
-1) To see if it is possible to fit a linear regression in the prediction of credit scores and interest rate. If so, we can use the regression model to predict the credit score and the interest rate. However, there are certain problems that might occur. Firstly, we need to ensure if there are any linear relationship between credit scores and the other variables. Second, we need to check for multicollinearity. If there is, we cannot fit a linear regression model to it and thus, we will have to look for other regressions model that might be a better fit to this dataset. 
+1) To see if it is possible to fit a linear regression with credit score being the response variable and the geographical location and other non-mortage-realted variables as the predictor variables. If so, we can use the regression model to predict the credit score. However, there are certain problems that might occur. Firstly, we need to ensure if there are any linear relationship between credit scores and the other variables. Second, we need to check for multicollinearity. If there is, we cannot fit a linear regression model to it and thus, we will have to look for other regressions model that might be a better fit to this dataset. 
 
 2) Using the time series plot we created, we can follow up by doing a time series forecasting on the current interest rate variable in the monthly performance dataset. Firstly, we can see if it is possible to fit any forecasting model such as ARIMA, ETS, etc. Secondly, we can test the accuracy of the forecasted values against the actual values in the dataset.
 
