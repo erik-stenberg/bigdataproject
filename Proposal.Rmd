@@ -22,12 +22,18 @@ options(citr.use_betterbiblatex = FALSE)
 
 ### Background of project:
 
+Housing has been one of the biggest problems which the Hong Kong society faces. While no effective solutions seem to be available to solve it, our group aims to find out a potential strategy that HKSAR government could learn from, by looking at the government-sponsored U.S. corporate Freddie Mac, which provides open data for the public.
+
+The mission of this company is to increase the supply of money for mortgage and hence ease up homeownership and rental housing for the U.S. citizens, which would also benefit our citizens when implemented properly in Hong Kong.
+
 ### Problem of the study:
 
+To analyse the credit performance of mortgage transactions of Freddie Mac, and potentially evaluate the feasibility of implementing Freddie Mac in Hong Kong with the help of the HKSAR government.
+
 ### Project Objectives:
-1) Utilising big data analytics tools introduced in class to analyse US housing mortgage data. 
-2) To Visualise and explore interesting facts from the data set. 
-3) Modelling and forecasting relevant variables and evaluate its accuracy.
+1) To consolidate concepts and tools that we learnt in previous/current courses by applying them in a real life dataset and situation, such as data visualisation, data mining and big data analytics.
+2) To comprehensively execute a “Data science workflow”, i.e. data preprocessing, exploratory data analysis, data modelling, model interpretation and evaluation, and data visualisation.
+3) To potentially provide a strategy for the HKSAR government to alleviate the housing problem in HK.
 
 # Description of data
 
